@@ -1,1 +1,24 @@
-chore: add Apache-2.0 license
+3. Commit with message: `docs: add README`.
+
+### 5. Add `CODE_OF_CONDUCT.md`
+1. **Add file → Create new file** → `CODE_OF_CONDUCT.md`  
+2. Paste Contributor Covenant excerpt (or the full text). Commit: `docs: add CODE_OF_CONDUCT`.
+
+### 6. Add `CONTRIBUTING.md`
+1. **Add file → Create new file** → `CONTRIBUTING.md`  
+2. Paste the content (contribution steps). Commit: `docs: add CONTRIBUTING`.
+
+### 7. Add `simple-interest.sh`
+1. **Add file → Create new file** → `simple-interest.sh`  
+2. Paste the script:
+
+```bash
+#!/bin/bash
+echo "Enter Principal:"
+read p
+echo "Enter Rate:"
+read r
+echo "Enter Time:"
+read t
+si=$(echo "$p * $r * $t / 100" | bc)
+echo "Simple Interest = $si"
